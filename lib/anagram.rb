@@ -12,12 +12,10 @@ def match(list)
   list.each do |word|
   letters = word.scan /\w/
   grams = @gram.scan /\w/
-  
   if letters.sort == grams.sort
     matches << word
-    return matches 
-  else 
-    return []
+    
+  
   
   end
 end 
