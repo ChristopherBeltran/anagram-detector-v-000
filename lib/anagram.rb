@@ -14,9 +14,7 @@ def match(list)
   grams = @gram.scan /\w/
   if letters.sort == grams.sort
     matches << word
-
 end
-end 
-end 
+return matches
   
 end 
