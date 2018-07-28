@@ -10,7 +10,6 @@ end
 def match(list)
   matches = []
   list.each do |word|
-    word.each do 
   letters = word.scan /\w/
   grams = @gram.scan /\w/
   
