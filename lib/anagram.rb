@@ -8,12 +8,14 @@ def initialize(gram)
 end
 
 def match(list)
+  matches = []
   list.each do |word|
   letters = word.scan /\w/
   grams = @gram.scan /\w/
   
   if letters.sort == grams.sort
-    return word
+    matches << word
+    return matches 
   else 
     return []
   
