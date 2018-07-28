@@ -8,8 +8,9 @@ def initialize(gram)
 end
 
 def match(list)
+  letters = []
   list.each do |word|
-  letters = word.split(" ")
+  letters << word.split(" ")
   
   if letters.sort == gram.sort
     binding.pry
