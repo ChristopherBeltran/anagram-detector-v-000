@@ -13,7 +13,6 @@ def match(list)
   letters << word.split(" ")
   
   if letters.sort == gram.sort
-    binding.pry
     return word
   end
 end 
