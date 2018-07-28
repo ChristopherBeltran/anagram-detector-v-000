@@ -15,6 +15,7 @@ def match(list)
   if letters.sort == grams.sort
     matches << word
 end
+end 
 return matches
 end 
 end 
