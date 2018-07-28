@@ -10,9 +10,8 @@ end
 def match(list)
   list.each do |word|
   letters = word.scan /\w/
+  letters.sort == gram.sort?
   
-  if letters.sort == gram.sort
-    return word
   end
 end 
   
